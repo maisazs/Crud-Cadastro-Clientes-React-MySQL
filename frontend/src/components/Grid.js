@@ -4,6 +4,8 @@ import styled from "styled-components";
 import { FaTrash, FaEdit } from "react-icons/fa";
 import { toast } from "react-toastify";
 
+import "../styles/btn.css";
+
 const Table = styled.table`
   width: 100%;
   background-color: #fff;
@@ -42,6 +44,7 @@ export const Td = styled.td`
 `;
 
 const Grid = ({ users, setUsers, setOnEdit }) => {
+  
   const handleEdit = (item) => {
     setOnEdit(item);
   };
@@ -80,10 +83,10 @@ const Grid = ({ users, setUsers, setOnEdit }) => {
               {item.fone}
             </Td>
             <Td alignCenter width="5%">
-              <FaEdit onClick={() => handleEdit(item)} />
+              <FaEdit onClick={() => handleEdit(item)} className="btn"/>
             </Td>
             <Td alignCenter width="5%">
-              <FaTrash onClick={() => handleDelete(item.id)} />
+              <FaTrash onClick={() => handleDelete(item.id)} className="btn"/>
             </Td>
           </Tr>
         ))}
