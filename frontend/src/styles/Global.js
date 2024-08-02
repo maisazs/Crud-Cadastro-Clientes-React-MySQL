@@ -1,19 +1,20 @@
 import { createGlobalStyle } from "styled-components";
 
-const GlobalStyle = createGlobalStyle `
-    * {
-        margin: 0;
-        padding: 0;
-        font-family: 'poppins', sans-serif;
-    }
+const Global = createGlobalStyle`
 
-    body {
-        width: 100vw;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        background-color: #f2f2f2;
-    }
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+  }
+  
+  body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: #f2f2f2;
+  }
 `;
 
-export default GlobalStyle;
+export default Global;

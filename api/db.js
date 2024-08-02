@@ -1,5 +1,3 @@
-//banco de dados
-
 import mysql from "mysql"
 
 export const db = mysql.createConnection({
@@ -7,4 +5,4 @@ export const db = mysql.createConnection({
     user: "root",
     password: "3825",
     database: "crud"
-})
+});
