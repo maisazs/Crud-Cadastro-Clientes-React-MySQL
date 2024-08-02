@@ -4,18 +4,9 @@ import styled from "styled-components";
 import { FaTrash, FaEdit } from "react-icons/fa";
 import { toast } from "react-toastify";
 
-import "../styles/btn.css";
+import "../styles/Grid.css";
 
-const Table = styled.table`
-  width: 100%;
-  background-color: #fff;
-  padding: 20px;
-  box-shadow: 0px 0px 5px #ccc;
-  border-radius: 5px;
-  max-width: 1120px;
-  margin: 20px auto;
-  word-break: break-all;
-`;
+const Table = styled.table``;
 
 export const Thead = styled.thead``;
 
@@ -64,7 +55,7 @@ const Grid = ({ users, setUsers, setOnEdit }) => {
   };
 
   return (
-    <Table>
+    <Table className="Table">
       <Thead>
         <Tr>
           <Th>Nome</Th>

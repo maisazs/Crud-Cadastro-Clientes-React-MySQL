@@ -1,0 +1,39 @@
+.FormContainer {
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+    flex-wrap: wrap;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 0px 5px #ccc;
+    border-radius: 5px;
+}
+
+.InputArea {
+    display: flex;
+    flex-direction: column;
+}
+
+.Input {
+    width: 120px;
+    padding: 0 10px;
+    border: 1px solid #00000091;
+    border-radius: 5px;
+    height: 40px;
+    background-color: #0000001f;
+}
+
+.Button {
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    background-color: #000000;
+    color: white;
+    height: 42px;
+    transition: .3s;
+}
+
+.Button:hover {
+    background-color: #000000b8;
+}

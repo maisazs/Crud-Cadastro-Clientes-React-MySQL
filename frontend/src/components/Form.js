@@ -3,41 +3,17 @@ import React, { useEffect, useRef } from "react";
 import styled from "styled-components";
 import { toast } from "react-toastify";
 
-const FormContainer = styled.form`
-  display: flex;
-  align-items: flex-end;
-  gap: 10px;
-  flex-wrap: wrap;
-  background-color: #fff;
-  padding: 20px;
-  box-shadow: 0px 0px 5px #ccc;
-  border-radius: 5px;
-`;
+import "../styles/Form.css" //importação do css
 
-const InputArea = styled.div`
-  display: flex;
-  flex-direction: column;
-`;
+const FormContainer = styled.form``;
 
-const Input = styled.input`
-  width: 120px;
-  padding: 0 10px;
-  border: 1px solid #bbb;
-  border-radius: 5px;
-  height: 40px;
-`;
+const InputArea = styled.div``;
+
+const Input = styled.input``;
 
 const Label = styled.label``;
 
-const Button = styled.button`
-  padding: 10px;
-  cursor: pointer;
-  border-radius: 5px;
-  border: none;
-  background-color: #2c73d2;
-  color: white;
-  height: 42px;
-`;
+const Button = styled.button``;
 
 const Form = ({ getUsers, onEdit, setOnEdit }) => {
   const ref = useRef();
@@ -99,25 +75,25 @@ const Form = ({ getUsers, onEdit, setOnEdit }) => {
   };
 
   return (
-    <FormContainer ref={ref} onSubmit={handleSubmit}>
-      <InputArea>
-        <Label>Nome</Label>
-        <Input name="nome" />
+    <FormContainer ref={ref} onSubmit={handleSubmit} className="FormContainer">
+      <InputArea className="InputArea">
+        <Label className="Label">Nome</Label>
+        <Input name="nome" className="Input"/>
       </InputArea>
-      <InputArea>
-        <Label>E-mail</Label>
-        <Input name="email" type="email" />
+      <InputArea className="InputArea">
+        <Label className="Label">E-mail</Label>
+        <Input name="email" type="email" className="Input"/>
       </InputArea>
-      <InputArea>
-        <Label>Telefone</Label>
-        <Input name="fone" />
+      <InputArea className="InputArea">
+        <Label className="Label">Telefone</Label>
+        <Input name="fone" className="Input"/>
       </InputArea>
-      <InputArea>
-        <Label>Data de Nascimento</Label>
-        <Input name="data_nascimento" type="date" />
+      <InputArea className="InputArea">
+        <Label className="Label">Data de Nascimento</Label>
+        <Input name="data_nascimento" type="date" className="Input"/>
       </InputArea>
 
-      <Button type="submit">SALVAR</Button>
+      <Button type="submit" className="Button">SALVAR</Button>
     </FormContainer>
   );
 };
